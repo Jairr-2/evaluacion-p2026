@@ -1,3 +1,47 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem; 
+}
+
+img {
+  max-width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+}
+
+.container {
+  width: 140rem;
+  margin: 0;
+}
+
+
+.btn {
+  text-decoration: none;
+  color: #003366;
+  padding: 1.5rem 2rem;
+  border-radius: 9rem;
+}
+
+.btn-amarillo {
+  background-color: #FFAA00;
+
 }
